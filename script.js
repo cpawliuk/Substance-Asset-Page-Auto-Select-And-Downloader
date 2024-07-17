@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Substance Asset Page GLB Auto Select
-// @website      https://github.com/cpawliuk/Substance-Asset-Page-GLB-Auto-Select
-// @version      2024-07-17
+// @name         Substance Asset Page Auto Select and Downloader
+// @website      https://github.com/cpawliuk/Substance-Asset-Page-Auto-Select-And-Downloader
+// @version      1.0
 // @description  Simple script to auto select the GLB download option
 // @author       Christopher Pawliuk
 // @match        *://substance3d.adobe.com/assets*
