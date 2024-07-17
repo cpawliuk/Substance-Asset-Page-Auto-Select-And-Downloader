@@ -19,9 +19,12 @@ function SelectGLB() {
     document.getElementsByClassName("spectrum-Menu-item")[1].click();
 
     // Script will continue to call the function every 3000 ms due to React being used for the site.
+    // Only if GLB isn't already selected.
     setInterval(() => {
-        document.getElementsByClassName("spectrum-SplitButton-trigger")[0].click();
-        document.getElementsByClassName("spectrum-Menu-item")[1].click();
+        if (document.getElementsByClassName("spectrum-SplitButton-action")[0].firstChild.textContent !== "Download (GLB)") {
+            document.getElementsByClassName("spectrum-SplitButton-trigger")[0].click();
+            document.getElementsByClassName("spectrum-Menu-item")[1].click();
+        }
     }, 3000);
 }
 
