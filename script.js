@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Substance Asset Page Auto Select and Downloader
 // @website      https://github.com/cpawliuk/Substance-Asset-Page-Auto-Select-And-Downloader
-// @version      1.1
+// @version      1.2
 // @description  Simple script to auto select the GLB download option and auto download the file.
 // @author       Christopher Pawliuk
 // @match        *://substance3d.adobe.com/assets*
@@ -19,7 +19,7 @@ window.ToggleDownload = () => {
     document.getElementById("toggle-button").textContent = window.downloadFile ? "Off" : "On";
 };
 
-addEventListener("load", setTimeout(RunScript, 3000)); // Set the timeout higher if needed due to the client side delay in loading the components.
+addEventListener("load", function() { setTimeout(RunScript, 3000); }); // Set the timeout higher if needed due to the client side delay in loading the components.
 
 function DownloadFile() {
     document.querySelector(".spectrum-SplitButton-action").click();
